@@ -1,30 +1,48 @@
+<!-- eslint-disable quotes -->
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+
+  <div class="content">
+
+    <nav-bar></nav-bar>
+    <router-view />
+  </div>
+  <footer-view></footer-view>
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+// import axios from 'axios';
+import NavBar from './components/NavBar.vue';
+import FooterView from './components/FooterView.vue';
+
+export default {
+  name: 'App',
+  components: { NavBar, FooterView },
+
+  data() {
+    return {
+
+    };
+  },
+
+  methods: {
+  },
+
+};
+</script>
+<style scoped>
+/* .content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+} */
+
+.open {
+  transform: translateX(300px);
 }
 
-nav {
-  padding: 30px;
+#navigation-icon{
+  cursor: pointer;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
