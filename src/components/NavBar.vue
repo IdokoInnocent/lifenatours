@@ -6,7 +6,7 @@
       <router-link class="nav__el" :to="{ name: 'home' }">All Tours</router-link>
     </nav>
     <div class="header__logo">
-      <img src="https://realnatours.herokuapp.com/img/logo-white.png" alt="NatourLogo" />
+      <img src="https://natour-api.onrender.com/img/logo-white.png" alt="NatourLogo" />
     </div>
     <nav class="nav nav--user" v-if="!mobile">
       <template v-if="authenticated">
