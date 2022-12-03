@@ -174,15 +174,4 @@ th {
   color: #fff;
 }
 
-@media only screen and (max-width: 31.5em) {
-  table {
-    width: 40%;
-    font-size: 90%;
-  }
-
-  th, td {
-    padding: 1rem
-  }
-}
-
 </style>

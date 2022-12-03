@@ -11,7 +11,7 @@ import '@/assets/main.css';
 
 require('@/store/suscriber');
 
-axios.defaults.baseURL = 'https://realnatours.herokuapp.com/api/v1/';
+axios.defaults.baseURL = 'https://natour-api.onrender.com/';
 store.dispatch('auth/attempt', localStorage.getItem('token')).then(() => {
   const app = createApp(App);
   app.use(store);
