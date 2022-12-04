@@ -3,7 +3,7 @@
 <template>
      <div class="footer">
       <div class="footer__logo">
-        <img src="https://realnatours.herokuapp.com/img/logo-green.png" alt="Natours logo" />
+        <img src="https://natours-api-production-dbe8.up.railway.app/img/logo-white.png" alt="Natours logo" />
       </div>
       <ul class="footer__nav">
         <li><a href="#">About us</a></li>

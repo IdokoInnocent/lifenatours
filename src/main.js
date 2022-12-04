@@ -11,7 +11,7 @@ import '@/assets/main.css';
 
 require('@/store/suscriber');
 
-axios.defaults.baseURL = 'https://natour-api.onrender.com/api/v1';
+axios.defaults.baseURL = 'https://natours-api-production-dbe8.up.railway.app/api/v1';
 store.dispatch('auth/attempt', localStorage.getItem('token')).then(() => {
   const app = createApp(App);
   app.use(store);
