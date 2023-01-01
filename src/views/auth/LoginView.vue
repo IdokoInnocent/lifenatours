@@ -69,6 +69,7 @@ export default {
       this.pending = 'Loading....';
       await this.signIn(this.form).then(() => this.$router.replace({ name: 'home' })).catch(() => {
         this.errMessage = 'Invalid username or password';
+        this.pending = false;
       });
       this.pending = '';
     },
